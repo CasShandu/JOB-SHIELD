@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Register</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+  <div class="card">
+    <h2>Register</h2>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <ul class="flash">
+          {% for cat,msg in messages %}<li class="{{cat}}">{{msg}}</li>{% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+    <form method="post" action="/register">
+      <input name="name" placeholder="Full name" required>
+      <input name="email" type="email" placeholder="Email" required>
+      <input name="password" type="password" placeholder="Password" required>
+      <label>Choose Plan</label>
+      <select name="plan">
+        <option value="free">Free</option>
+        <option value="standard">Standard (R299)</option>
+        <option value="premium">Premium (R499)</option>
+      </select>
+      <button class="btn" type="submit">Register</button>
+    </form>
+    <p><a href="/">← Home</a></p>
+  </div>
+</body>
+</html>

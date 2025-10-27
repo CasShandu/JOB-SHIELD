@@ -1,0 +1,17 @@
+body { font-family: Arial, Helvetica, sans-serif; background: linear-gradient(120deg,#eef2ff,#f7fff6); margin:0; padding:30px; color:#123; }
+.card { max-width:980px; margin:20px auto; background:#fff; border-radius:12px; padding:28px; box-shadow:0 10px 30px rgba(2,20,40,0.06); }
+h1,h2 { margin:0 0 12px 0; }
+.actions { display:flex; gap:10px; margin-top:16px; flex-wrap:wrap; }
+.btn { display:inline-block; background:#2575fc; color:#fff; padding:10px 14px; border-radius:8px; text-decoration:none; }
+input, select, textarea { display:block; width:100%; padding:10px; margin:10px 0; border-radius:8px; border:1px solid #d7e1ea; box-sizing:border-box; }
+.muted { color:#6b7a86; font-size:0.95em; }
+.pricing-cards { display:flex; gap:12px; margin-top:12px; flex-wrap:wrap; }
+.pricing { background:#f7fbff; padding:16px; border-radius:10px; flex:1; text-align:center; box-shadow:0 4px 18px rgba(0,0,0,0.04); }
+.pricing.featured { border:2px solid #ff6b6b; background:linear-gradient(180deg,#fff6f6,#fff); }
+.flash { list-style:none; padding:0; margin:10px 0; }
+.flash li { padding:8px 10px; border-radius:6px; margin-bottom:6px; }
+.flash .error { background:#ffe6e6; color:#8b1d1d; }
+.flash .success { background:#e6ffea; color:#13662b; }
+ol { padding-left:18px; }
+li { margin-bottom:12px; padding:10px; border-radius:8px; background:#f7fbff; }
+code { background:#f2f4f7; padding:2px 6px; border-radius:4px; }

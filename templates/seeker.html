@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Find Jobs</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+  <div class="card">
+    <h2>Find Jobs</h2>
+    <form method="post" action="/find_jobs">
+      <input name="name" placeholder="Your name" required>
+      <input name="qualification" placeholder="Qualification (e.g. Matric, Diploma)">
+      <input name="experience" type="number" placeholder="Years of experience" min="0" value="0">
+      <input name="skills" placeholder="Skills (comma separated) e.g. customer service,cash handling">
+      <input name="location" placeholder="Town / City">
+      <button class="btn" type="submit">Find Matches</button>
+    </form>
+    <p><a href="/">← Home</a></p>
+  </div>
+</body>
+</html>

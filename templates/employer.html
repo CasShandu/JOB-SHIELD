@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Post Job</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+  <div class="card">
+    <h2>Post a Job</h2>
+    <form method="post" action="/post_job">
+      <input name="company" placeholder="Company name" required>
+      <input name="title" placeholder="Job title (e.g. Cashier)" required>
+      <input name="min_experience" type="number" placeholder="Min years experience" min="0" required>
+      <input name="skills" placeholder="Skills (comma separated) e.g. cash handling,customer service" required>
+      <input name="location" placeholder="Town / City">
+      <button class="btn" type="submit">Post Job</button>
+    </form>
+    <p><a href="/">← Home</a></p>
+  </div>
+</body>
+</html>

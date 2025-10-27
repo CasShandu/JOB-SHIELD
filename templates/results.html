@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Matches</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+  <div class="card">
+    <h2>Matches for {{ seeker.name }}</h2>
+    <p class="muted">Qualification: {{ seeker.qualification }} · Experience: {{ seeker.experience }} yrs · Skills: {{ seeker.skills }}</p>
+
+    {% if scored %}
+      <ol>
+      {% for item in scored %}
+        <li>
+          <strong>{{ item.job.title }}</strong> — {{ item.job.company }} ({{ item.job.location or 'N/A' }})
+          <div>Score: {{ item.score }}%</div>
+          <div class="muted">Requires {{ item.job.min_experience }} yrs · Skills: {{ item.job.skills }}</div>
+        </li>
+      {% endfor %}
+      </ol>
+    {% else %}
+      <p>No jobs found. Ask an employer to post jobs first.</p>
+    {% endif %}
+
+    <p><a href="/find_jobs">Try another profile</a> · <a href="/">Home</a></p>
+  </div>
+</body>
+</html>
